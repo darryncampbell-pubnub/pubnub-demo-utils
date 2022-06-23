@@ -66,7 +66,7 @@
     }
     
     const url = `https://ps.pndsn.com/publish/${pub}/${sub}/0/demo/myCallback/${encodeURIComponent(JSON.stringify({ id: identifier, feature: action }))}?store=0&uuid=${identifier}`;
-    fetchClient(url)
+    fetch(url)
         .then(response => {
         if (!response.ok) {
             throw new Error(response.status + ' ' + response.statusText);
