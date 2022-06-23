@@ -25,7 +25,7 @@
         debug = false;
     }
   
-    let queryString = new URL(windowLocation).search.substring(1);
+    let queryString = new URL(window.location.href).search.substring(1);
     const urlParamsArray = queryString.split('&');
     for (let i = 0; i < urlParamsArray.length; i++) {
         if (urlParamsArray[i].startsWith('identifier') && urlParamsArray[i].includes('=')) {
