@@ -19,3 +19,15 @@ actionCompleted({
   debug: false
 })
 ```
+
+## Moderation:
+
+**Note that you should use PubNub functions for server side moderation**
+
+https://darryncampbell-pubnub.github.io/pubnub-demo-utils/js/interactive-demo-interface/clientside-moderation.js
+
+### Usage:
+
+```javascript
+var moderatedText = moderate(text);
+```
